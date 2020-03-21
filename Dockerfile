@@ -8,4 +8,4 @@ EXPOSE 80
 EXPOSE 443
 
 ENV IP 127.0.0.1
-CMD sed 's/{IP}/${IP}/' /etc/dnsmasq.tpl > /etc/dnsmasq.conf && dnsmasq -khR & sniproxy -c /etc/sniproxy.conf -f
+CMD sed "s/{IP}/${IP}/" /etc/dnsmasq.tpl > /etc/dnsmasq.conf && dnsmasq -khR & sniproxy -c /etc/sniproxy.conf -f
