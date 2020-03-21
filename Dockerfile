@@ -18,4 +18,6 @@ CMD dnsmasq -khR \
     --address=/nflxvideo.net/${IP} \
     --address=/nflxso.net/${IP} \
     --address=/nflxext.com/${IP} \
+    --address=/ivi.tv/${IP} \
+    --address=/ivi.ru/${IP} \
     & sniproxy -c /etc/sniproxy.conf -f
