@@ -9,7 +9,7 @@ EXPOSE 53/udp
 EXPOSE 80
 EXPOSE 443
 
-ENV IP 127.0.0.1
+ENV IP 85.17.9.202
 ENV ALLOWED_IP 0.0.0.0/0
 
 CMD echo "Configure iptables..." && \
